@@ -18,6 +18,7 @@ import com.therouter.app.HomePathIndex;
 import com.therouter.app.KotlinPathIndex;
 import com.therouter.app.R;
 import com.therouter.app.router.InternalBeanTest;
+import com.therouter.app.router.UserInfoEntity;
 import com.therouter.router.Navigator;
 import com.therouter.router.Route;
 import com.therouter.router.interceptor.NavigationCallback;
@@ -66,6 +67,7 @@ public class NavigatorTestActivity extends AppCompatActivity {
                         .withParcelable("ParcelableObject", bean)
                         .withString("stringChildClassField", "数据在子类解析")// 测试 string
                         .withSerializable("stringChildClassFields", stringChildClassFields) // 嵌套的泛型参数
+                        .withParcelable("user_info_entity", new UserInfoEntity(100, "twj", 1))
                         .withObject("runnable", new Runnable() {
                             @Override
                             public void run() {
