@@ -19,6 +19,7 @@ public class ClassCacheUtils {
     public static final String CACHE_SERVICE_PROVIDE = "serviceProvide.therouter";
     public static final String CACHE_AUTOWIRED = "autowired.therouter";
     public static final String CACHE_ROUTE = "route.therouter";
+    public static final String CACHE_ROUTE2 = "route.therouter2";
 
     public static boolean write(Set<String> set, File file) throws IOException {
         String content = set2String(set);
